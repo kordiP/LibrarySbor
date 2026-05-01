@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-warning-subtle px-lg-5 px-3 py-4">
+    <a class="navbar-brand fw-bold fs-3" routerLink="/">
+        Читалище <span class="fst-italic">"Просвета - 1928"</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" (click)="isMenuOpen = !isMenuOpen">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" [class.show]="isMenuOpen">
+        <div class="d-flex gap-2 mt-2 mt-lg-0">
+            <button class="btn btn-lg fw-semibold"
+                [ngClass]="activeIndex === 0 ? 'btn-warning' : 'btn-light bg-transparent'" routerLink="/Library"
+                (click)="setActive(0)">
+                Читалище
+            </button>
+
+            <button class="btn btn-lg fw-semibold"
+                [ngClass]="activeIndex === 1 ? 'btn-warning' : 'btn-light bg-transparent'" routerLink="/Bibliotheca"
+                (click)="setActive(1)">
+                Библиотека
+            </button>
+
+            <button class="btn btn-lg fw-semibold"
+                [ngClass]="activeIndex === 2 ? 'btn-warning' : 'btn-light bg-transparent'" routerLink="/Contact"
+                (click)="setActive(2)">
+                Контакти
+            </button>
+        </div>
+
+    </div>
+</nav>
