@@ -1,0 +1,14 @@
+.custom-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+section p {
+  line-height: 1.7;
+  color: #444;
+}
+
+section h4 {
+  border-left: 4px solid currentColor;
+  padding-left: 0.75rem;
+}

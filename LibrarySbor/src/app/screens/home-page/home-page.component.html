@@ -1,29 +1,92 @@
-<ngb-carousel>
-    <ng-template ngbSlide>
-        <div class="picsum-img-wrapper">
-            <img [src]="images[0]" alt="Random first slide" />
+<div class="container my-4">
+
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-warning">Народно читалище „Просвета - 1928“</h2>
+        <p class="lead text-muted">
+            Самоуправляващо се българско културно-просветно сдружение
+        </p>
+    </div>
+
+    <carousel-sliding [slidesInfo]="this.slidesInfo"></carousel-sliding>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <p class="fs-5">
+                Народно читалище „Просвета - 1928“ е културно-просветно сдружение със седалище в
+                <strong>село Сбор, област Пазарджик</strong>, което изпълнява и държавни културни задачи.
+            </p>
+
+            <p>
+                В неговата дейност могат да участват <strong>всички физически лица</strong>, независимо от:
+            </p>
+
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">Възраст и пол</li>
+                <li class="list-group-item">Политически възгледи</li>
+                <li class="list-group-item">Религиозни убеждения</li>
+                <li class="list-group-item">Етническо самосъзнание</li>
+            </ul>
+
+            <p>
+                Читалището е <strong>юридическо лице с нестопанска цел</strong> и се вписва в регистъра на
+                Окръжния съд – Пазарджик.
+            </p>
+
+            <p>
+                Отношенията с Общинската управа се основават на
+                <strong>уважение, партньорство и автономност</strong>.
+            </p>
         </div>
-        <div class="carousel-caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-    </ng-template>
-    <ng-template ngbSlide>
-        <div class="picsum-img-wrapper">
-            <img [src]="images[0]" alt="Random second slide" />
-        </div>
-        <div class="carousel-caption">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </ng-template>
-    <ng-template ngbSlide>
-        <div class="picsum-img-wrapper">
-            <img [src]="images[0]" alt="Random third slide" />
-        </div>
-        <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-    </ng-template>
-</ngb-carousel>
+    </div>
+
+    <div class="container my-4">
+        <section class="mb-5">
+            <h4 class="fw-bold text-warning mb-3">Основни цели</h4>
+
+            <ol class="ps-3 custom-list">
+                <li>Развитие и обогатяване на културния и социалния живот в с. Сбор</li>
+                <li>Запазване на местните обичаи и традиции</li>
+                <li>Разширяване на знанията и приобщаване към културата, науката и изкуството</li>
+                <li>Възпитаване на национално самосъзнание</li>
+                <li>Осигуряване на достъп до информация</li>
+            </ol>
+        </section>
+
+        <section class="mb-5">
+            <h4 class="fw-bold text-secondary mb-3">Основни дейности</h4>
+
+            <ul class="ps-3 custom-list">
+                <li>Поддържане на библиотеки, читални и дигитални информационни мрежи</li>
+                <li>Подпомагане на любителското художествено творчество</li>
+                <li>Организиране на курсове, клубове, концерти и събития</li>
+                <li>Събиране и разпространение на знания за родния край</li>
+                <li>Създаване и съхраняване на музейни колекции</li>
+                <li>Предоставяне на компютърни и интернет услуги</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4 class="fw-bold text-dark mb-3">Допълнителна дейност</h4>
+
+            <p>
+                Читалището развива и
+                <strong>допълнителна стопанска дейност със социална насоченост</strong>,
+                включително в областите:
+            </p>
+
+            <ul class="ps-3 custom-list mb-3">
+                <li>Физическа култура и здравеопазване</li>
+                <li>Информационни услуги</li>
+                <li>Взаимодействие с училища и църквата</li>
+            </ul>
+
+            <p class="mb-0">
+                Получените приходи се използват
+                <strong>изцяло за постигане на целите</strong>,
+                определени в устава, съгласно действащото законодателство.
+            </p>
+        </section>
+
+    </div>
+
+</div>

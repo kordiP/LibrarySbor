@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'home-page',
@@ -6,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  slidesInfo: { image: string; title: string }[] = [];
   constructor() {
   }
 
-  images: string[] = [];
-
   ngOnInit(): void {
-    this.images.push("assets/images/CHANGE.jpg");
+    this.slidesInfo.push({ image: "assets/images/slide-home-1.jpg", title: "Паметника" });
+    this.slidesInfo.push({ image: "assets/images/slide-home-2.jpg", title: "Читалището" });
+    this.slidesInfo.push({ image: "assets/images/slide-home-3.jpg", title: "Читалището" });
+    this.slidesInfo.push({ image: "assets/images/slide-home-4.jpg", title: "Кметството" });
   }
 }

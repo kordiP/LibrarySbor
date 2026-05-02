@@ -1,0 +1,23 @@
+.contact-table th {
+  width: 35%;
+  font-weight: 600;
+  color: #555;
+  background: #fafafa;
+}
+
+.contact-table td {
+  color: #333;
+}
+
+.contact-table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.contact-table a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.contact-table a:hover {
+  text-decoration: underline;
+}

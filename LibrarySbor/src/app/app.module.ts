@@ -9,6 +9,8 @@ import { NavTopComponent } from './shared/nav-top/nav-top.component';
 import { LibraryPageComponent } from './screens/library-page/library-page.component';
 import { BibliothecaPageComponent } from './screens/bibliotheca-page/bibliotheca-page.component';
 import { ContactPageComponent } from './screens/contact-page/contact-page.component';
+import { NavBottomComponent } from './shared/nav-bottom/nav-bottom.component';
+import { CarouselSlidingComponent } from './shared/carousel-sliding/carousel-sliding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ContactPageComponent } from './screens/contact-page/contact-page.compon
     NavTopComponent,
     LibraryPageComponent,
     BibliothecaPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    NavBottomComponent,
+    CarouselSlidingComponent
   ],
   imports: [
     BrowserModule,

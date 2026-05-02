@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs';
 
 @Component({
   selector: 'nav-top',
@@ -11,7 +9,7 @@ export class NavTopComponent implements OnInit {
   isMenuOpen = false;
   activeIndex = -1;
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   closeMenu() {
     this.isMenuOpen = false;
@@ -23,6 +21,22 @@ export class NavTopComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+    const fullUrl = window.location.href.split('/');
+    const currScr = fullUrl[fullUrl.length - 1];
+
+    switch (currScr) {
+      case "Library":
+        this.activeIndex = 0;
+        break;
+      case "Bibliotheca":
+        this.activeIndex = 1;
+        break;
+      case "Contact":
+        this.activeIndex = 2;
+        break;
+      default:
+        this.activeIndex = -1;
+        break;
+    }
   }
 }

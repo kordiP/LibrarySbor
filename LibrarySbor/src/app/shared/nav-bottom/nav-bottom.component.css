@@ -1,0 +1,15 @@
+.nav-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 193, 7, 0.08); /* soft warning tint */
+}
+
+.nav-link-custom {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.nav-link-custom:hover {
+  color: #000;
+}

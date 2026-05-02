@@ -7,3 +7,19 @@ body {
 .btn-light:hover {
     --bs-btn-hover-border-color: rgb(255, 183, 0) !important;
 }
+
+.hover-scale {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale:active {
+  transform: scale(0.97);
+}
+
+.hover-scale {
+  will-change: transform;
+}

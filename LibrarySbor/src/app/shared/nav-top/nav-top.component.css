@@ -1,0 +1,11 @@
+@media (max-width: 423px) {
+  .navbar-center-mobile {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .navbar-center-mobile .navbar-brand {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
