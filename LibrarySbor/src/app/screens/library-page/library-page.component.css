@@ -28,4 +28,21 @@
   background: #f8f9fa;
   border-color: rgba(0,0,0,0.3);
   transform: translateY(-1px);
+  cursor: pointer;
+}
+
+ngb-alert {
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.alert-wrapper {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.25s ease;
+}
+
+.alert-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
 }

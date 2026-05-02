@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./library-page.component.css']
 })
 export class LibraryPageComponent implements OnInit {
+  showAlert = false;
 
   constructor() { }
+
+  showMissingFileAlert(): void {
+    this.showAlert = true;
+  }
 
   ngOnInit(): void {
   }

@@ -52,7 +52,7 @@
                         План 2026
                     </a>
 
-                    <a class="doc-link" href="assets/docs/plan2026.pdf" download>
+                    <a class="doc-link" (click)="showMissingFileAlert()">
                         Декларации
                     </a>
                 </div>
@@ -60,5 +60,12 @@
             </div>
         </div>
 
+        <div *ngIf="showAlert" class="mt-3 alert-wrapper show">
+            <ngb-alert type="secondary" (closed)="showAlert = false">
+                Файла все още го няма.
+            </ngb-alert>
+        </div>
     </div>
+
+
 </section>
